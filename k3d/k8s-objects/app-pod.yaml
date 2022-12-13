@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: goapp
+  labels:
+    app: goapp
+spec:
+  containers:
+  - name: app
+    image: omerxx/goapp
+    ports:
+    - containerPort: 80
