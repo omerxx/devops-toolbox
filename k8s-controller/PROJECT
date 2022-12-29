@@ -1,0 +1,16 @@
+domain: devops.toolbox
+layout:
+- go.kubebuilder.io/v3
+projectName: k8s-controller
+repo: devops.toolbox/controller
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: devops.toolbox
+  group: crd
+  kind: PodTracker
+  path: devops.toolbox/controller/api/v1
+  version: v1
+version: "3"

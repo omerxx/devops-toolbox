@@ -1,0 +1,24 @@
+# permissions for end users to edit podtrackers.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: podtracker-editor-role
+rules:
+- apiGroups:
+  - crd.devops.toolbox
+  resources:
+  - podtrackers
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - crd.devops.toolbox
+  resources:
+  - podtrackers/status
+  verbs:
+  - get

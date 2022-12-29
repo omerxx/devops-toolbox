@@ -1,0 +1,10 @@
+apiVersion: "crd.devops.toolbox/v1"
+kind: "PodTracker"
+metadata:
+  name: my-tracker
+spec:
+  name: "slack-tracker"
+  report:
+    kind: "slack"
+    channel: "bots"
+    key: ""

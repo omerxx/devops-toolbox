@@ -1,0 +1,6 @@
+apiVersion: crd.devops.toolbox/v1
+kind: PodTracker
+metadata:
+  name: podtracker-sample
+spec:
+  # TODO(user): Add fields here
